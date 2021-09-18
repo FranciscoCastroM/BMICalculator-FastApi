@@ -57,7 +57,7 @@ async def bmicalculator(height: float, weight: float, age: Optional[int] = None)
                 'age': age},
             status_code=200)
 
-    elif bmi >= 30.0 and bmi < 39.9:
+    elif bmi >= 30.0:
         return JSONResponse(
             content={
                 "result": "Obese",
